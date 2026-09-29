@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Energynome Trade OPC provides reliable fuel supply and distribution of Diesel, Premium and Unleaded gasoline for businesses, transportation, marine, construction and industrial operations in Negros Occidental and nearby areas.">
+<meta name="keywords" content="Energynome Trade OPC, fuel supplier Negros Occidental, diesel supplier, gasoline supplier, fuel distribution, bulk fuel supplier, diesel delivery, gasoline supplier Philippines">
+<meta name="author" content="Energynome Trade OPC">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Energynome Trade OPC | Fuel Supply & Distribution">
+<meta property="og:description" content="Reliable fuel supply and distribution for businesses, transportation, marine, construction and industrial operations.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+
+<title>Energynome Trade OPC | Fuel Supply & Distribution</title>
+<link rel="icon" href="logo.png">
+
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<style>
+/* =========================================================
+   ENERGYNOME TRADE OPC — CORPORATE REDESIGN
+   Brand direction: Navy + Mint + Orange
+   Existing assets/forms/EmailJS preserved
+========================================================= */
+
+:root{
+  --navy:#082957;
+  --navy-2:#0d3b78;
+  --navy-3:#14549a;
+  --orange:#f4a261;
+  --orange-dark:#df8742;
+  --mint:#55d6bd;
+  --mint-dark:#159b82;
+  --yellow:#e8b84a;
+  --red:#d62828;
+  --ink:#172033;
+  --muted:#64748b;
+  --line:#dce5e2;
+  --bg:#f6f9f8;
+  --white:#fff;
+  --dark:#061426;
+  --viber:#7360f2;
+  --max:1180px;
+  --shadow:0 12px 35px rgba(8,41,87,.08);
+  --shadow-lg:0 24px 65px rgba(8,41,87,.14);
+  --radius:14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  color:var(--ink);background:#fff;line-height:1.55;
+  transition:background .25s,color .25s;
+}
+body.dark{
+  --ink:#edf4f7;--muted:#a9bac7;--line:#283c4b;--bg:#0b151f;
+  --white:#111e29;--dark:#06111c;
+  background:#08111a;color:var(--ink);
+}
+img{max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.container{width:min(92%,var(--max));margin:auto}
+
+/* TOP UTILITY STRIP */
+.top-strip{
+  background:var(--dark);color:#dce8ef;font-size:11px;
+}
+.top-strip .container{
+  min-height:34px;display:flex;justify-content:space-between;align-items:center;gap:18px;
+}
+.top-strip .right{display:flex;gap:18px;align-items:center}
+.top-strip i{color:var(--mint);margin-right:5px}
+
+/* HEADER */
+header{
+  position:fixed;z-index:1000;top:34px;left:0;width:100%;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(15px);
+  border-bottom:1px solid rgba(8,41,87,.08);
+  transition:.25s;
+}
+body.dark header{background:rgba(8,17,26,.94);border-color:#223442}
+.header-line{
+  height:3px;background:linear-gradient(90deg,var(--navy) 0 48%,var(--mint) 48% 78%,var(--orange) 78%);
+}
+.nav{height:84px;display:flex;align-items:center;gap:24px}
+.logo img{width:170px;display:block}
+.nav-links{margin-left:auto;display:flex;align-items:center;gap:24px}
+.nav-links a{
+  position:relative;font-size:11px;font-weight:800;text-transform:uppercase;
+  letter-spacing:.65px;color:var(--navy);padding:8px 0;
+}
+body.dark .nav-links a{color:#e9f2f5}
+.nav-links a:after{
+  content:"";position:absolute;left:0;bottom:0;width:0;height:2px;
+  background:var(--mint);transition:.2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--mint-dark)}
+body.dark .nav-links a:hover,body.dark .nav-links a.active{color:var(--mint)}
+.nav-links a:hover:after,.nav-links a.active:after{width:100%}
+.nav-quote{
+  background:var(--orange);padding:11px 17px!important;border-radius:7px;color:var(--navy)!important;
+  box-shadow:0 8px 20px rgba(244,162,97,.2);
+}
+.nav-quote:after{display:none}
+.nav-quote:hover{background:var(--navy);color:#fff!important;transform:translateY(-1px)}
+.theme-toggle{
+  width:38px;height:38px;border:1px solid var(--line);border-radius:50%;
+  background:transparent;color:var(--navy);display:grid;place-items:center;
+}
+body.dark .theme-toggle{color:var(--orange)}
+.menu{display:none;border:0;background:transparent;font-size:25px;color:var(--navy)}
+body.dark .menu{color:#fff}
+
+/* GLOBAL */
+section{padding:88px 0}
+.section-kicker{
+  display:inline-flex;align-items:center;gap:9px;color:var(--mint-dark);
+  font-size:11px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;
+}
+.section-kicker:before{content:"";width:28px;height:3px;background:var(--orange);border-radius:5px}
+.section-head{max-width:760px;margin:0 auto 42px;text-align:center}
+.section-head h2{
+  color:var(--navy);font-size:38px;line-height:1.08;letter-spacing:-1px;margin:9px 0 12px;
+}
+body.dark .section-head h2{color:#eef6f8}
+.section-head p{color:var(--muted);font-size:14px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 20px;border:1px solid transparent;border-radius:7px;
+  font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.45px;
+  transition:.22s ease;
+}
+.btn-orange{background:var(--orange);color:var(--navy);box-shadow:0 9px 22px rgba(244,162,97,.24)}
+.btn-orange:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.btn-outline{border-color:rgba(8,41,87,.28);color:var(--navy);background:#fff}
+body.dark .btn-outline{background:transparent;border-color:#577080;color:#eef6f8}
+.btn-outline:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn-mint{background:var(--mint-dark);color:#fff}
+.btn-mint:hover{background:#0d806c;transform:translateY(-2px)}
+.buttons{display:flex;flex-wrap:wrap;gap:10px}
+
+/* HERO */
+.hero{
+  position:relative;min-height:720px;padding-top:118px;display:flex;align-items:center;overflow:hidden;
+  background:#fff url("fuel-background.jpg") 76% center/auto 100% no-repeat;
+}
+body.dark .hero{background-color:#09131e}
+.hero:before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.98) 27%,rgba(255,255,255,.88) 46%,rgba(255,255,255,.42) 66%,rgba(255,255,255,0) 100%);
+}
+body.dark .hero:before{
+  background:linear-gradient(90deg,rgba(9,19,30,.99),rgba(9,19,30,.93) 34%,rgba(9,19,30,.62) 66%,rgba(9,19,30,.1));
+}
+.hero:after{
+  content:"";position:absolute;bottom:0;left:0;width:100%;height:5px;
+  background:linear-gradient(90deg,var(--navy),var(--mint),var(--orange));
+}
+.hero-content{position:relative;z-index:2;padding:72px 0}
+.hero-copy{max-width:670px}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:9px;color:var(--orange-dark);
+  font-size:12px;font-weight:900;letter-spacing:1.6px;text-transform:uppercase;
+}
+.hero-eyebrow:before{content:"";width:31px;height:3px;background:var(--orange)}
+.hero h1{
+  font-size:64px;line-height:.99;letter-spacing:-2.2px;text-transform:uppercase;
+  color:var(--navy);margin:16px 0 19px;font-weight:950;
+}
+body.dark .hero h1{color:#f1f8fa}
+.hero h1 span{color:var(--orange)}
+.hero p{font-size:16px;line-height:1.72;color:#425166;max-width:610px;margin-bottom:27px}
+body.dark .hero p{color:#c5d2dc}
+.hero-proof{display:flex;gap:22px;flex-wrap:wrap;margin-top:25px}
+.hero-proof div{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:800;color:var(--navy)}
+body.dark .hero-proof div{color:#dce9ee}
+.hero-proof i{color:var(--mint-dark)}
+.hero-card{
+  position:absolute;right:5%;bottom:48px;width:285px;padding:21px;
+  background:rgba(8,41,87,.92);color:#fff;border:1px solid rgba(255,255,255,.14);
+  border-radius:13px;box-shadow:var(--shadow-lg);backdrop-filter:blur(10px);
+}
+.hero-card .mini-label{font-size:9px;text-transform:uppercase;letter-spacing:1.4px;color:var(--mint);font-weight:900}
+.hero-card h3{font-size:22px;line-height:1.12;margin:7px 0 12px}
+.hero-card p{font-size:11px;color:#d7e3ea;line-height:1.55;margin:0}
+.hero-card .mini-line{height:1px;background:rgba(255,255,255,.15);margin:15px 0}
+.hero-card strong{font-size:11px}
+
+/* TRUST */
+.trust{background:var(--navy);color:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{padding:25px 18px;display:flex;gap:12px;align-items:center;border-right:1px solid rgba(255,255,255,.13)}
+.trust-item:last-child{border-right:0}
+.trust-icon{font-size:25px;color:var(--mint);min-width:34px;text-align:center}
+.trust-item:nth-child(2) .trust-icon{color:#fff}
+.trust-item:nth-child(3) .trust-icon{color:var(--orange)}
+.trust-item:nth-child(4) .trust-icon{color:var(--yellow)}
+.trust-item strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.35px}
+.trust-item small{display:block;color:#c8d8e2;font-size:9px;line-height:1.45}
+
+/* PRODUCTS — PROFESSIONAL CORPORATE PRODUCT CARDS */
+.products{
+  background:
+    radial-gradient(circle at 8% 18%,rgba(85,214,189,.07),transparent 25%),
+    radial-gradient(circle at 92% 12%,rgba(244,162,97,.07),transparent 23%),
+    #fff;
+  overflow:hidden;
+}
+body.dark .products{
+  background:
+    radial-gradient(circle at 8% 18%,rgba(85,214,189,.06),transparent 25%),
+    #0b151f;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  align-items:start;
+}
+
+.product{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  background:#fff;
+  border:1px solid #dce5e2;
+  border-radius:16px;
+  overflow:hidden;
+  min-height:0;
+  height:auto;
+  box-shadow:0 10px 28px rgba(8,41,87,.07);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+body.dark .product{
+  background:#111e29;
+  border-color:#283c4b;
+}
+.product:hover{
+  transform:translateY(-7px);
+  box-shadow:0 22px 48px rgba(8,41,87,.14);
+  border-color:rgba(21,155,130,.28);
+}
+
+/* Product color bars */
+.product:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:5px;
+  z-index:4;
+  background:var(--mint);
+}
+.product:nth-child(1):before{background:var(--yellow)}
+.product:nth-child(2):before{background:var(--red)}
+.product:nth-child(3):before{background:var(--mint)}
+
+/* Product visual header */
+.product-visual{
+  position:relative;
+  min-height:148px;
+  padding:25px 25px 20px;
+  overflow:hidden;
+  background:
+    linear-gradient(115deg,rgba(8,41,87,.97),rgba(13,59,120,.86)),
+    url("fuel-background.jpg") center/cover no-repeat;
+}
+.product:nth-child(1) .product-visual{
+  background:
+    linear-gradient(115deg,rgba(8,41,87,.96),rgba(8,41,87,.74)),
+    url("fuel-background.jpg") center/cover no-repeat;
+}
+.product:nth-child(2) .product-visual{
+  background:
+    linear-gradient(115deg,rgba(125,17,27,.94),rgba(214,40,40,.72)),
+    url("fuel-supply.jpg") center/cover no-repeat;
+}
+.product:nth-child(3) .product-visual{
+  background:
+    linear-gradient(115deg,rgba(5,91,88,.95),rgba(21,155,130,.70)),
+    url("fuel-background.jpg") center/cover no-repeat;
+}
+.product-visual:after{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  border:28px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  right:-75px;
+  top:-105px;
+}
+.product-visual-top{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+.fuel-icon{
+  width:57px;
+  height:57px;
+  flex:0 0 57px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:21px;
+  background:rgba(255,255,255,.97);
+  color:var(--mint-dark);
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+.product:nth-child(1) .fuel-icon{color: yellow}
+.product:nth-child(2) .fuel-icon{color:var(--red)}
+.product:nth-child(3) .fuel-icon{color:var(--mint-dark)}
+
+.product-code{
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1.1px;
+  color:rgba(255,255,255,.82);
+  text-transform:uppercase;
+  text-align:right;
+}
+.product-code strong{
+  display:block;
+  color:#fff;
+  font-size:10px;
+  margin-top:2px;
+}
+
+.product-visual h3{
+  position:relative;
+  z-index:2;
+  color:#fff!important;
+  font-size:29px;
+  line-height:1;
+  letter-spacing:.2px;
+  text-transform:uppercase;
+  margin-top:21px;
+}
+
+/* Product body */
+.product-body{
+  display:flex;
+  flex-direction:column;
+  flex:0 0 auto;
+  padding:22px 25px 23px;
+}
+.product-description{
+  font-size:12.5px;
+  color:var(--muted);
+  line-height:1.65;
+  margin-bottom:18px;
+}
+
+.product-divider{
+  height:1px;
+  background:var(--line);
+  margin-bottom:15px;
+}
+
+.product-ideal-label{
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--navy);
+  margin-bottom:11px;
+}
+body.dark .product-ideal-label{color:#edf6f8}
+.product:nth-child(1) .product-ideal-label{color:#a17d00}
+.product:nth-child(2) .product-ideal-label{color:var(--red)}
+.product:nth-child(3) .product-ideal-label{color:var(--mint-dark)}
+
+.product-ideal{
+  list-style:none;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px 12px;
+  margin-bottom:20px;
+}
+.product-ideal li{
+  display:flex;
+  align-items:flex-start;
+  gap:7px;
+  font-size:10px;
+  line-height:1.35;
+  color:#52677a;
+}
+body.dark .product-ideal li{color:#b6c6cf}
+.product-ideal li i{
+  margin-top:2px;
+  font-size:9px;
+  color:var(--mint-dark);
+}
+.product:nth-child(1) .product-ideal li i{color:#b38a00}
+.product:nth-child(2) .product-ideal li i{color:var(--red)}
+.product:nth-child(3) .product-ideal li i{color:var(--mint-dark)}
+
+.product-footer{
+  margin-top:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+}
+.product-footer span{
+  max-width:145px;
+  font-size:8.5px;
+  line-height:1.35;
+  font-weight:900;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.4px;
+}
+.product-footer a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:42px;
+  padding:0 17px;
+  border-radius:8px;
+  font-size:9.5px;
+  font-weight:900;
+  letter-spacing:.35px;
+  text-transform:uppercase;
+  color:#fff;
+  transition:.22s ease;
+  white-space:nowrap;
+}
+.product:nth-child(1) .product-footer a{
+  background:#d8a914;
+  color:#fff;
+}
+.product:nth-child(2) .product-footer a{background:var(--red)}
+.product:nth-child(3) .product-footer a{background:var(--mint-dark)}
+.product-footer a:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(8,41,87,.15);
+}
+.product:nth-child(1) .product-footer a:hover{background:yellow}
+.product:nth-child(2) .product-footer a:hover{background:red}
+.product:nth-child(3) .product-footer a:hover{background:green}
+
+/* Product section CTA */
+.products-cta{
+  margin-top:28px;
+  padding:24px 28px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--navy),var(--navy-2));
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(8,41,87,.12);
+}
+.products-cta:after{
+  content:"";
+  position:absolute;
+  width:210px;
+  height:210px;
+  border:28px solid rgba(85,214,189,.09);
+  border-radius:50%;
+  right:-90px;
+  top:-110px;
+}
+.products-cta-content{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  position:relative;
+  z-index:2;
+}
+.products-cta-icon{
+  width:52px;
+  height:52px;
+  flex:0 0 52px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:rgba(85,214,189,.14);
+  color:var(--mint);
+  font-size:20px;
+}
+.products-cta h3{
+  font-size:18px;
+  line-height:1.15;
+  margin-bottom:4px;
+}
+.products-cta p{
+  color:#cbdbe3;
+  font-size:10.5px;
+  line-height:1.5;
+}
+.products-cta .btn{
+  position:relative;
+  z-index:2;
+  min-width:155px;
+  background:var(--orange);
+  color:var(--navy);
+}
+.products-cta .btn:hover{
+  background:#fff;
+  color:var(--navy);
+}
+
+@media(max-width:760px){
+  .product-grid{grid-template-columns:1fr}
+  .product{min-height:0;height:auto}
+  .products-cta{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .products-cta .btn{width:100%}
+}
+@media(max-width:480px){
+  .product-body{padding:20px 20px 21px}
+  .product-visual{padding:23px 20px 19px}
+  .product-visual h3{font-size:26px}
+ .product-footer{
+    align-items:stretch;
+    flex-direction:column;
+  }
+  .product-footer span{max-width:none}
+  .product-footer a{width:100%}
+  .products-cta{padding:21px}
+  .products-cta-content{align-items:flex-start}
+  .products-cta h3{font-size:16px}
+}
+
+
+/* INDUSTRIES — CARD + DETAIL MODAL DESIGN */
+.industries{background:linear-gradient(180deg,#f3f9f8 0%,#eef6f5 100%);overflow:hidden}
+body.dark .industries{background:#0d1822}
+
+.industry-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:15px;
+  align-items:stretch;
+}
+.industry{
+  position:relative;
+  background:#fff;
+  border:1px solid #dce7e3;
+  border-radius:12px;
+  overflow:hidden;
+  min-height:346px;
+  padding:0 16px 18px;
+  text-align:left;
+  box-shadow:0 8px 22px rgba(8,41,87,.07);
+  transition:transform .24s ease,box-shadow .24s ease;
+}
+
+body.dark .industry{
+  background:#111e29;
+  border-color:#283c4b;
+}
+.industry:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 35px rgba(8,41,87,.14);
+}
+.industry-image{
+  position:relative;
+  height:140px;
+  margin:0 -16px;
+  overflow:hidden;
+  background:linear-gradient(135deg,var(--navy),var(--mint-dark));
+}
+
+.industry-image img{
+  width:100%;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  display:block;
+  transition:transform .45s ease;
+}
+
+.industry:hover .industry-image img{transform:scale(1.05)}
+
+.industry-image:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom,rgba(8,41,87,0) 45%,rgba(8,41,87,.18));
+  pointer-events:none;
+}
+
+.industry-icon{
+  position:relative;
+  z-index:2;
+  width:54px;
+  height:54px;
+  margin:-27px 0 11px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#fff;
+  border:5px solid rgba(255,255,255,.9);
+  box-shadow:0 6px 15px rgba(8,41,87,.13);
+  font-size:20px;
+  color:var(--mint-dark);
+}
+
+.industry:nth-child(even) .industry-icon{
+  color:var(--orange-dark);
+}
+
+.industry:nth-child(5) .industry-icon{
+  color:var(--navy-2);
+}
+
+.industry h3{
+  font-size:15px;
+  line-height:1.15;
+  text-transform:uppercase;
+  color:var(--navy);
+  margin-bottom:9px;
+  min-height:34px;
+}
+
+body.dark .industry h3{color:#edf6f8}
+
+.industry p{
+  color:#64748b;
+  font-size:11px;
+  line-height:1.5;
+  min-height:50px;
+  margin-bottom:14px;
+}
+
+body.dark .industry p{color:#a9bac7}
+
+.industry-details{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-width:145px;
+  padding:9px 14px;
+  border:1.5px solid var(--mint-dark);
+  border-radius:999px;
+  background:#fff;
+  color:var(--mint-dark);
+  font-size:10px;
+  font-weight:900;
+  text-transform:none;
+  transition:.22s ease;
+}
+
+.industry:nth-child(even) .industry-details{
+  border-color:var(--orange);
+  color:var(--orange-dark);
+}
+
+.industry:nth-child(5) .industry-details{
+  border-color:var(--navy-2);
+  color:var(--navy-2);
+}
+
+body.dark .industry-details{
+  background:transparent;
+}
+
+.industry-details:hover{
+  background:var(--mint-dark);
+  color:#fff;
+  transform:translateY(-1px);
+}
+
+.industry:nth-child(even) .industry-details:hover{
+  background:var(--orange);
+  color:var(--navy);
+}
+
+.industry:nth-child(5) .industry-details:hover{
+  background:var(--navy-2);
+  color:#fff;
+}
+
+/* INDUSTRY DETAIL MODAL */
+.industry-modal{
+  position:fixed;
+  inset:0;
+  z-index:4800;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  background:rgba(3,12,24,.78);
+  backdrop-filter:blur(8px);
+}
+
+.industry-modal.show{
+  display:flex;
+  animation:fadeIn .2s ease;
+}
+
+.industry-modal-box{
+  width:min(820px,96vw);
+  max-height:92vh;
+  display:grid;
+  grid-template-columns:.95fr 1.25fr;
+  overflow:hidden;
+  border-radius:14px;
+  background:#fff;
+  box-shadow:0 30px 90px rgba(0,0,0,.42);
+  position:relative;
+}
+
+body.dark .industry-modal-box{background:#111e29}
+
+.industry-modal-photo{
+  min-height:450px;
+  background:var(--navy);
+  position:relative;
+  overflow:hidden;
+}
+
+.industry-modal-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.industry-modal-photo:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:38%;
+  background:linear-gradient(to top,rgba(3,17,32,.72),transparent);
+}
+
+.industry-modal-caption{
+  position:absolute;
+  z-index:2;
+  left:24px;
+  right:24px;
+  bottom:22px;
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+  line-height:1.35;
+  text-transform:uppercase;
+}
+
+.industry-modal-content{
+  padding:30px 30px 27px;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+
+.industry-modal-close{
+  position:absolute;
+  z-index:5;
+  top:14px;
+  right:14px;
+  width:34px;
+  height:34px;
+  border:0;
+  border-radius:50%;
+  background:#fff;
+  color:var(--navy);
+  display:grid;
+  place-items:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.14);
+}
+
+.industry-modal-close:hover{
+  background:var(--navy);
+  color:#fff;
+}
+
+.industry-modal-heading{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding-right:35px;
+  margin-bottom:13px;
+}
+
+.industry-modal-icon{
+  flex:0 0 52px;
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--orange);
+  color:#fff;
+  font-size:20px;
+}
+
+.industry-modal-content h3{
+  color:var(--navy);
+  font-size:21px;
+  line-height:1.05;
+  text-transform:uppercase;
+}
+
+body.dark .industry-modal-content h3{color:#edf6f8}
+
+.industry-modal-lead{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
+  padding-bottom:13px;
+  border-bottom:1px solid var(--line);
+}
+
+.industry-modal-columns{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  margin:14px 0;
+}
+
+.industry-modal-column{
+  padding-right:15px;
+}
+
+.industry-modal-column + .industry-modal-column{
+  padding-left:15px;
+  border-left:1px solid var(--line);
+}
+
+.industry-modal-column h4{
+  color:var(--navy);
+  font-size:9px;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+body.dark .industry-modal-column h4{color:#edf6f8}
+
+.industry-modal-list{
+  list-style:none;
+  display:grid;
+  gap:6px;
+}
+
+.industry-modal-list li{
+  color:#52677a;
+  font-size:10px;
+  line-height:1.35;
+  display:flex;
+  gap:7px;
+  align-items:flex-start;
+}
+
+body.dark .industry-modal-list li{color:#a9bac7}
+
+.industry-modal-list i{
+  color:var(--mint-dark);
+  margin-top:2px;
+}
+
+.industry-service{
+  margin-top:auto;
+  padding:11px 13px;
+  border-radius:8px;
+  background:#edf8f6;
+  color:#496477;
+  font-size:9px;
+}
+
+body.dark .industry-service{background:#0d2730;color:#b9cbd3}
+
+.industry-service i{
+  color:var(--mint-dark);
+  margin-right:6px;
+}
+
+.industry-modal-actions{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+}
+
+.industry-modal-actions .btn{
+  flex:1;
+  min-height:40px;
+}
+
+@media(max-width:1100px){
+  .industry-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+@media(max-width:760px){
+  .industry-grid{grid-template-columns:1fr 1fr}
+  .industry-modal-box{
+    grid-template-columns:1fr;
+    max-height:94vh;
+    overflow:auto;
+  }
+  .industry-modal-photo{height:245px;min-height:245px}
+  .industry-modal-content{padding:22px}
+}
+
+@media(max-width:480px){
+  .industry-grid{grid-template-columns:1fr}
+  .industry{min-height:0}
+  .industry p{min-height:0}
+  .industry h3{min-height:0}
+  .industry-modal{padding:10px}
+  .industry-modal-box{width:100%}
+  .industry-modal-photo{height:210px;min-height:210px}
+  .industry-modal-columns{grid-template-columns:1fr;gap:12px}
+  .industry-modal-column,
+  .industry-modal-column + .industry-modal-column{
+    padding:0;
+    border-left:0;
+  }
+}
+
+/* SERVICES */
+.solutions{padding:0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body.dark .solutions{background:#0b151f}
+.solution-grid{display:grid;grid-template-columns:1.18fr repeat(4,1fr)}
+.solution-title{
+  background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;padding:34px 27px;
+  position:relative;overflow:hidden;
+}
+.solution-title:after{
+  content:"";position:absolute;width:170px;height:170px;border:25px solid rgba(85,214,189,.13);
+  border-radius:50%;right:-75px;top:-70px;
+}
+.solution-title .section-kicker{color:var(--mint)}
+.solution-title h2{font-size:26px;line-height:1.1;margin-top:9px;position:relative;z-index:2}
+.solution{
+  padding:31px 15px;text-align:center;background:#fff;border-right:1px solid var(--line);
+}
+body.dark .solution{background:#111e29}
+.solution-icon{font-size:27px;color:var(--mint-dark);margin-bottom:10px}
+.solution h3{font-size:10px;text-transform:uppercase;color:var(--navy)}
+body.dark .solution h3{color:#edf6f8}
+.solution p{font-size:10px;color:var(--muted);margin-top:7px}
+
+/* ABOUT */
+.about-section{background:#fff}
+body.dark .about-section{background:#0b151f}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:62px;align-items:center}
+.about-visual{
+  min-height:440px;border-radius:18px;position:relative;overflow:hidden;
+  background:var(--navy) url("fuel-supply.jpg") center/cover no-repeat;
+  box-shadow:var(--shadow-lg);
+}
+.about-visual:after{
+  content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(8,41,87,.88),rgba(8,41,87,.2) 70%);
+}
+.about-badge{
+  position:absolute;z-index:2;top:24px;left:24px;background:var(--orange);color:var(--navy);
+  padding:9px 13px;font-size:9px;font-weight:900;text-transform:uppercase;border-radius:5px;
+}
+.about-visual-content{position:absolute;z-index:2;left:28px;bottom:28px;color:#fff}
+.about-visual-content small{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--mint);font-weight:900}
+.about-visual-content h3{font-size:47px;line-height:.98;text-transform:uppercase;margin-top:7px}
+.about-visual-content h3 span{color:var(--orange)}
+.about-text .section-kicker{margin-bottom:2px}
+.about-text h2{font-size:39px;line-height:1.05;color:var(--navy);margin:9px 0 16px}
+body.dark .about-text h2{color:#edf6f8}
+.about-text p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:12px}
+.checks{list-style:none;margin:20px 0 24px}
+.checks li{font-size:12px;font-weight:700;margin:10px 0}
+.checks li:before{content:"✓";display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#e8f9f5;color:var(--mint-dark);margin-right:9px;font-weight:900}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.fact{background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:21px;text-align:center}
+body.dark .fact{background:#111e29}
+.fact strong{display:block;color:var(--navy);font-size:17px}
+body.dark .fact strong{color:#edf6f8}
+.fact span{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;font-weight:900;margin-top:4px}
+
+/* WHY CHOOSE US — ENHANCED CORPORATE LAYOUT */
+.why-section{
+  position:relative;
+  background:linear-gradient(180deg,#f7faf9 0%,#eef6f4 100%);
+  overflow:hidden;
+}
+body.dark .why-section{
+  background:linear-gradient(180deg,#0d1822 0%,#0b151f 100%);
+}
+.why-layout{
+  display:grid;
+  grid-template-columns:minmax(330px,.78fr) minmax(0,1.42fr);
+  gap:54px;
+  align-items:stretch;
+}
+.why-intro{
+  position:relative;
+  min-height:430px;
+  padding:42px 36px 38px;
+  border-radius:18px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  background:
+    linear-gradient(180deg,rgba(8,41,87,.04) 0%,rgba(8,41,87,.08) 42%,rgba(8,41,87,.9) 100%),
+    url("fuel-background.jpg") center/cover no-repeat;
+  box-shadow:var(--shadow-lg);
+}
+.why-intro:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,.72) 0%,rgba(255,255,255,0) 42%);
+  pointer-events:none;
+}
+.why-intro:after{
+  content:"";
+  position:absolute;
+  left:-35px;
+  bottom:-62px;
+  width:340px;
+  height:150px;
+  border-top:24px solid var(--orange);
+  border-radius:50%;
+  transform:rotate(-7deg);
+  box-shadow:0 20px 0 -3px var(--mint),0 39px 0 -7px var(--navy);
+  opacity:.98;
+}
+.why-intro > *{position:relative;z-index:2}
+
+.why-intro-badge{
+  position:absolute;
+  top:25px;
+  left:27px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 11px;
+  border-radius:999px;
+  background:rgba(255,255,255,.94);
+  color:var(--navy);
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  box-shadow:0 8px 20px rgba(8,41,87,.12);
+}
+.why-intro-badge i{color:var(--mint-dark)}
+
+.why-intro h3{
+  max-width:430px;
+  color:#fff;
+  font-size:36px;
+  line-height:1.04;
+  letter-spacing:-1.1px;
+  margin:0 0 15px;
+}
+.why-intro h3 span{color:var(--orange)}
+.why-intro p{
+  max-width:460px;
+  color:#dce8ee;
+  font-size:12px;
+  line-height:1.65;
+  margin-bottom:23px;
+}
+.why-intro .btn{
+  width:max-content;
+  min-width:175px;
+}
+
+.why-benefits{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px 20px;
+  align-content:center;
+}
+.why{
+  position:relative;
+  min-height:142px;
+  padding:25px 20px 22px 80px;
+  border:1px solid #dbe8e4;
+  border-radius:13px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 8px 22px rgba(8,41,87,.05);
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+body.dark .why{
+  background:#111e29;
+  border-color:#283c4b;
+}
+.why:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 32px rgba(8,41,87,.10);
+  border-color:rgba(21,155,130,.35);
+}
+.why-icon{
+  position:absolute;
+  left:20px;
+  top:24px;
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#e5f7f3;
+  color:var(--mint-dark);
+  font-size:19px;
+}
+.why:nth-child(even) .why-icon{
+  background:#fff0e4;
+  color:var(--orange-dark);
+}
+.why h3{
+  font-size:11px;
+  line-height:1.25;
+  text-transform:uppercase;
+  color:var(--navy);
+  margin-bottom:7px;
+}
+body.dark .why h3{color:#edf6f8}
+.why p{
+  font-size:10.5px;
+  color:var(--muted);
+  line-height:1.58;
+}
+
+.why-service-note{
+  grid-column:1/-1;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:2px;
+  padding:14px 17px;
+  border-top:1px solid #cfe0db;
+  color:var(--navy);
+  font-size:10.5px;
+  line-height:1.45;
+}
+body.dark .why-service-note{
+  border-color:#283c4b;
+  color:#dbe9ee;
+}
+.why-service-note i{
+  flex:0 0 31px;
+  width:31px;
+  height:31px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:var(--mint);
+  color:var(--navy);
+}
+.why-service-note strong{font-weight:900}
+.why-service-note span{color:var(--muted)}
+
+@media(max-width:1100px){
+  .why-layout{grid-template-columns:1fr;gap:30px}
+  .why-intro{min-height:390px}
+  .why-benefits{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .why-benefits{grid-template-columns:1fr}
+  .why-intro{min-height:420px;padding:34px 25px 31px}
+  .why-intro h3{font-size:31px}
+  .why-service-note{grid-column:auto}
+}
+@media(max-width:480px){
+  .why-intro{min-height:430px}
+  .why-intro h3{font-size:28px}
+  .why{min-height:0;padding:22px 18px 20px 75px}
+  .why-icon{left:18px;top:21px}
+}
+
+/* HOW */
+.how{background:#fff}
+body.dark .how{background:#0b151f}
+.how-grid{display:grid;grid-template-columns:1fr repeat(4,1fr);gap:14px}
+.how-title{padding:10px 8px}
+.how-title h2{font-size:28px;line-height:1.06;color:var(--navy);margin-top:8px}
+body.dark .how-title h2{color:#edf6f8}
+.step{
+  position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px 15px 21px;
+  text-align:center;box-shadow:0 6px 20px rgba(8,41,87,.04)
+}
+body.dark .step{background:#111e29}
+.step b{
+  position:absolute;top:-15px;left:50%;transform:translateX(-50%);width:31px;height:31px;
+  display:grid;place-items:center;border-radius:50%;background:var(--mint-dark);color:#fff;font-size:10px
+}
+.step:nth-child(3) b,.step:nth-child(5) b{background:var(--orange);color:var(--navy)}
+.step h3{font-size:10px;text-transform:uppercase;color:var(--navy);margin-top:7px}
+body.dark .step h3{color:#edf6f8}
+.step p{font-size:10px;color:var(--muted);margin-top:6px}
+
+/* GALLERY */
+.gallery{background:var(--bg)}
+body.dark .gallery{background:#0d1822}
+.gallery-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.gallery-card{
+  position:relative;height:215px;border-radius:13px;overflow:hidden;cursor:pointer;isolation:isolate;
+  background:linear-gradient(135deg,var(--navy),var(--mint-dark));box-shadow:var(--shadow);transition:.25s
+}
+.gallery-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.gallery-card img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;z-index:0;transition:.45s}
+.gallery-card:hover img{transform:scale(1.06)}
+.gallery-card:after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to top,rgba(3,17,32,.94),rgba(3,17,32,.35) 55%,rgba(3,17,32,.02))
+}
+.gallery-card span{position:absolute;z-index:2;bottom:17px;left:17px;right:17px;color:#fff;font-size:11px;font-weight:900;text-transform:uppercase;display:flex;gap:8px;align-items:center}
+.gallery-card span i{color:var(--mint)}
+.gallery-click{
+  position:absolute;z-index:3;right:13px;top:13px;width:35px;height:35px;border-radius:50%;
+  display:grid;place-items:center;background:rgba(255,255,255,.18);backdrop-filter:blur(7px);color:#fff
+}
+/* LIGHTBOX */
+.photo-modal{position:fixed;inset:0;z-index:5000;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(3,12,24,.84);backdrop-filter:blur(9px)}
+.photo-modal.show{display:flex;animation:fadeIn .2s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.photo-modal-box{width:min(950px,96vw);max-height:93vh;overflow:hidden;border-radius:15px;background:var(--white);position:relative;box-shadow:0 30px 90px rgba(0,0,0,.5)}
+.photo-slideshow{position:relative}
+.photo-modal-image{width:100%;height:min(62vh,620px);object-fit:cover;display:block;background:var(--navy)}
+.photo-nav,.photo-modal-close{
+  position:absolute;z-index:4;width:44px;height:44px;border:0;border-radius:50%;display:grid;place-items:center;
+  background:rgba(5,21,38,.72);color:#fff;transition:.2s
+}
+.photo-nav{top:50%;transform:translateY(-50%)}
+.photo-nav:hover,.photo-modal-close:hover{background:var(--orange);color:var(--navy)}
+.photo-prev{left:15px}.photo-next{right:15px}
+.photo-modal-close{top:14px;right:14px;z-index:5}
+.photo-dots{display:flex;justify-content:center;gap:7px;padding:11px}
+.photo-dot{width:8px;height:8px;border:0;border-radius:50%;background:var(--line)}
+.photo-dot.active{width:21px;border-radius:8px;background:var(--mint-dark)}
+.photo-modal-info{padding:20px 24px 24px}
+.photo-modal-info h3{color:var(--navy);font-size:22px;margin-bottom:6px}
+body.dark .photo-modal-info h3{color:#edf6f8}
+.photo-modal-info p{color:var(--muted);font-size:12px;line-height:1.65}
+body.modal-open{overflow:hidden}
+
+/* BIG CTA */
+.cta{
+  background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;position:relative;overflow:hidden
+}
+.cta:after{
+  content:"";position:absolute;width:330px;height:330px;border:45px solid rgba(85,214,189,.08);
+  border-radius:50%;right:-120px;top:-130px
+}
+.cta-inner{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.cta .section-kicker{color:var(--mint)}
+.cta h2{font-size:38px;line-height:1.05;margin:8px 0 9px}
+.cta p{font-size:13px;color:#d5e1e8;max-width:650px}
+
+/* PRICE */
+.price-request{background:var(--navy);color:#fff}
+.price-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:48px;align-items:center}
+.price-request .section-kicker{color:var(--mint)}
+.price-request h2{font-size:39px;line-height:1.04;margin:9px 0 14px}
+.price-request .lead{font-size:14px;color:#d4e0e7;line-height:1.7}
+.price-note{font-size:10px!important;color:#aebfca!important;margin-top:14px}
+.price-highlights{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.price-highlights div{border:1px solid rgba(255,255,255,.13);border-radius:9px;padding:12px;font-size:10px;color:#dce8ee}
+.price-highlights i{color:var(--mint);margin-right:6px}
+.price-form,.form{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;box-shadow:0 25px 60px rgba(0,0,0,.18)
+}
+body.dark .price-form,body.dark .form{background:#111e29}
+.price-fields,.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:10px;font-weight:900;text-transform:uppercase;color:var(--navy)}
+body.dark .field label{color:#edf6f8}
+input,select,textarea{
+  width:100%;font-size:13px;border:1px solid #d6e0dc;padding:12px;border-radius:7px;outline:none;
+  background:#fff;color:var(--ink);transition:.2s
+}
+body.dark input,body.dark select,body.dark textarea{background:#0d1822;border-color:#334b5a;color:#fff}
+input:focus,select:focus,textarea:focus{border-color:var(--mint-dark);box-shadow:0 0 0 3px rgba(32,184,154,.11)}
+textarea{min-height:125px;resize:vertical}
+.price-form button,.form button{margin-top:17px;border:0;min-width:190px}
+.recaptcha-wrap{margin-top:18px;overflow:visible}
+.g-recaptcha{display:flex;justify-content:flex-start}
+.form-status{display:none;margin-top:14px;padding:12px 14px;border-radius:7px;font-size:12px;font-weight:700}
+.form-status.success{display:block;background:#e8f7ef;color:#08723f;border:1px solid #b8e6cd}
+.form-status.error{display:block;background:#fff0f0;color:#a51d1d;border:1px solid #f1c2c2}
+.form-status.loading{display:block;background:#eef4ff;color:var(--navy-2);border:1px solid #cbd9f2}
+.hp-field{position:absolute!important;left:-9999px!important;opacity:0!important;height:0!important;width:0!important;pointer-events:none!important}
+
+/* QUOTE */
+.quote{background:var(--bg)}
+body.dark .quote{background:#0d1822}
+
+/* FAQ */
+.faq{background:#fff}
+body.dark .faq{background:#0b151f}
+.faq-wrap{max-width:900px;margin:auto}
+details{border:1px solid var(--line);background:#fff;border-radius:10px;margin-bottom:10px;overflow:hidden}
+body.dark details{background:#111e29}
+summary{list-style:none;cursor:pointer;padding:17px 20px;padding-right:50px;position:relative;font-size:12px;font-weight:900;color:var(--navy)}
+body.dark summary{color:#edf6f8}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:20px;top:11px;font-size:21px;color:var(--orange)}
+details[open] summary:after{content:"−"}
+details p{padding:0 20px 18px;font-size:12px;color:var(--muted)}
+
+/* CONTACT */
+.contact{background:var(--bg)}
+body.dark .contact{background:#0d1822}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.contact-cta{
+  background:linear-gradient(145deg,var(--navy),var(--navy-2));color:#fff;padding:31px 27px;border-radius:14px;
+  min-height:360px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;position:relative
+}
+.contact-cta:after{content:"";position:absolute;width:180px;height:180px;border:25px solid rgba(85,214,189,.12);border-radius:50%;right:-70px;top:-70px}
+.contact-cta>*{position:relative;z-index:2}
+.contact-cta .section-kicker{color:var(--mint)}
+.contact-cta h2{font-size:28px;line-height:1.08;margin:8px 0 12px}
+.contact-cta p{font-size:12px;color:#d4e1e8;line-height:1.65;margin-bottom:21px}
+.contact-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:27px;min-height:360px;box-shadow:var(--shadow)}
+body.dark .contact-box{background:#111e29}
+.contact-box h3{font-size:12px;text-transform:uppercase;color:var(--navy);letter-spacing:.8px;padding-bottom:12px;border-bottom:2px solid var(--mint);margin-bottom:17px}
+body.dark .contact-box h3{color:#edf6f8}
+.contact-box p{font-size:11px;color:var(--muted);line-height:1.6;margin-bottom:14px}
+.contact-box p i{width:20px;text-align:center;color:var(--mint-dark);margin-right:4px}
+.contact-link{color:var(--navy-2);font-weight:750}
+body.dark .contact-link{color:var(--mint)}
+.viber-link{display:inline-flex;align-items:center;gap:7px;color:var(--navy-2);font-weight:750}
+.viber-link .fa-viber{color:var(--viber);font-size:17px}
+.map-box{padding:0;overflow:hidden}
+.map-box h3{padding:20px 22px 14px;margin:0;background:#fff}
+body.dark .map-box h3{background:#111e29}
+.map iframe{width:100%;height:265px;border:0;display:block}
+.location-note{padding:13px 16px;text-align:center;font-size:10px;color:var(--muted);border-top:1px solid var(--line)}
+.location-note i{color:var(--orange);margin-right:5px}
+
+/* PRIVACY + FOOTER */
+.privacy{background:#f1f5f4;padding:44px 0}
+body.dark .privacy{background:#0b151f}
+.privacy-box{max-width:900px;margin:auto}
+.privacy-box h2{font-size:23px;color:var(--navy);margin:7px 0 10px}
+body.dark .privacy-box h2{color:#edf6f8}
+.privacy-box p{font-size:11px;color:var(--muted);margin-bottom:9px}
+.privacy-box a{color:var(--mint-dark);font-weight:800}
+footer{background:var(--dark);color:#fff;padding:38px 0;border-top:4px solid var(--orange)}
+.footer{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+.footer img{width:145px;margin-bottom:9px}
+.footer p{font-size:10px;color:#c7d6df;max-width:310px}
+.footer h4{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--mint);margin-bottom:11px}
+.footer-links{display:grid;gap:7px}
+.footer-links a{font-size:10px;color:#d5e1e8}
+.footer-links a:hover{color:var(--orange)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:25px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;font-size:9px;color:#9fb1bd}
+
+/* FLOATING ACTIONS */
+.floating-actions{position:fixed;right:18px;bottom:18px;z-index:900;display:grid;gap:8px}
+.floating-action{
+  width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;
+  box-shadow:0 9px 25px rgba(0,0,0,.2);transition:.2s
+}
+.floating-action.email{background:var(--mint-dark)}
+.floating-action.quote{background:var(--orange);color:var(--navy)}
+.floating-action:hover{transform:translateY(-3px)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .hero-card{right:2%}
+  .industry-grid{grid-template-columns:repeat(3,1fr)}
+  .solution-grid{grid-template-columns:repeat(4,1fr)}
+  .solution-title{grid-column:1/-1}
+  .how-grid{grid-template-columns:1fr 1fr}
+  .how-title{grid-column:1/-1}
+  .gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .contact-cta{grid-column:1/-1;min-height:auto}
+}
+@media(max-width:760px){
+  .top-strip{display:none}
+  header{top:0}
+  .nav{height:78px}
+  .logo img{width:150px}
+  .menu{display:block;margin-left:auto}
+  .theme-toggle{order:2}
+  .nav-links{
+    display:none;position:absolute;top:81px;left:0;width:100%;padding:18px 5%;
+    background:#fff;box-shadow:0 15px 30px rgba(0,0,0,.1);flex-direction:column;align-items:stretch;gap:7px
+  }
+  body.dark .nav-links{background:#0d1822}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:11px 0}
+  .nav-quote{text-align:center}
+  .hero{padding-top:78px;min-height:720px;background-position:center;background-size:auto 100%}
+  .hero:before{background:linear-gradient(90deg,rgba(255,255,255,.98),rgba(255,255,255,.8))}
+  body.dark .hero:before{background:linear-gradient(90deg,rgba(9,19,30,.98),rgba(9,19,30,.82))}
+  .hero h1{font-size:45px}
+  .hero-card{display:none}
+  .trust-grid,.product-grid,.about,.facts,.price-grid,.contact-grid,.footer{grid-template-columns:1fr}
+  .trust-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .about{gap:35px}
+  .about-visual{min-height:350px}
+  .solution-grid,.how-grid{grid-template-columns:1fr}
+  .solution-title{grid-column:auto}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .cta-inner{flex-direction:column;align-items:flex-start}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+@media(max-width:480px){
+  section{padding:62px 0}
+  .hero{min-height:690px}
+  .hero h1{font-size:37px;letter-spacing:-1.1px}
+  .hero p{font-size:13px}
+  .hero-proof{gap:10px;display:grid}
+  .section-head h2,.price-request h2{font-size:29px}
+  .about-text h2{font-size:31px}
+  .industry-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr}
+  .price-fields,.form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .price-form,.form{padding:20px}
+  .g-recaptcha{transform:scale(.86);transform-origin:left top;margin-bottom:-8px}
+  .floating-actions{right:13px;bottom:13px}
+}
+</style>
+</head>
+
+<body>
+<div class="top-strip">
+  <div class="container">
+    <div><i class="fa-solid fa-building"></i> Energynome Trade OPC</div>
+    <div class="right">
+      <span><i class="fa-solid fa-location-dot"></i> Negros Occidental, Philippines</span>
+      <span><i class="fa-solid fa-phone"></i> +034 469 524</span>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-line"></div>
+  <div class="container nav">
+    <a class="logo" href="#home" aria-label="Energynome Trade OPC homepage">
+      <img src="logo.png" alt="Energynome Trade OPC">
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#quote" class="nav-quote">Request a Quote</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button class="menu" id="menuButton" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <div class="hero-eyebrow">Reliable Fuel Supply &amp; Distribution</div>
+      <h1>Fueling Business.<br>Powering <span>Progress.</span></h1>
+      <p>
+        Energynome Trade OPC provides reliable supply and distribution of Diesel,
+        Premium and Unleaded gasoline for businesses, transportation, marine,
+        construction, equipment and industrial operations in Negros Occidental and nearby areas.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-orange" href="#quote"><i class="fa-solid fa-file-invoice"></i> Request a Quote</a>
+        <a class="btn btn-outline" href="#price-request"><i class="fa-solid fa-tags"></i> Get Current Fuel Price</a>
+      </div>
+
+  <div class="hero-card">
+    <div class="mini-label">Fuel Supply Solutions</div>
+    <h3>Built around your operational requirements.</h3>
+    <p>Regular, recurring and bulk-volume supply arrangements can be discussed based on your product, volume, location and schedule.</p>
+    <div class="mini-line"></div>
+    <strong><i class="fa-solid fa-arrow-right"></i> Diesel • Premium • Unleaded</strong>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item"><div class="trust-icon"><i class="fa-solid fa-circle-check"></i></div><div><strong>Reliable Supply</strong><small>Dependable fuel supply for your operations.</small></div></div>
+    <div class="trust-item"><div class="trust-icon"><i class="fa-solid fa-truck-fast"></i></div><div><strong>Timely Coordination</strong><small>Delivery and supply arrangements based on requirements.</small></div></div>
+    <div class="trust-item"><div class="trust-icon"><i class="fa-solid fa-star"></i></div><div><strong>Quality Products</strong><small>Fuel products for business and operational needs.</small></div></div>
+    <div class="trust-item"><div class="trust-icon"><i class="fa-solid fa-handshake"></i></div><div><strong>Customer Focused</strong><small>Relationships built on service and trust.</small></div></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Our Fuel Products</div>
+      <h2>Reliable Fuel for Every Operation</h2>
+      <p>Quality diesel and gasoline products for businesses, vehicles, equipment and operational requirements.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- DIESEL -->
+      <article class="product">
+        <div class="product-visual">
+          <div class="product-visual-top">
+            <div class="fuel-icon"><i class="fa-solid fa-gas-pump"></i></div>
+            <div class="product-code">
+              Product Code
+              <strong>ADO</strong>
+            </div>
+          </div>
+          <h3>Diesel</h3>
+        </div>
+
+        <div class="product-body">
+          <p class="product-description">
+            Reliable diesel fuel for commercial vehicles, generators, heavy equipment,
+            marine operations and other fuel-dependent activities.
+          </p>
+
+          <div class="product-footer">
+            <span>Commercial &amp; operational use</span>
+            <a href="#quote">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PREMIUM -->
+      <article class="product">
+        <div class="product-visual">
+          <div class="product-visual-top">
+            <div class="fuel-icon"><i class="fa-solid fa-gas-pump"></i></div>
+            <div class="product-code">
+              Product Code
+              <strong>PRO</strong>
+            </div>
+          </div>
+          <h3>Premium</h3>
+        </div>
+
+        <div class="product-body">
+          <p class="product-description">
+            Premium gasoline suitable for vehicles and equipment requiring dependable
+            gasoline performance for their operational needs.
+          </p>
+
+                  <div class="product-footer">
+            <span>Premium gasoline</span>
+            <a href="#quote">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- UNLEADED -->
+      <article class="product">
+        <div class="product-visual">
+          <div class="product-visual-top">
+            <div class="fuel-icon"><i class="fa-solid fa-gas-pump"></i></div>
+            <div class="product-code">
+              Product Code
+              <strong>ULG</strong>
+            </div>
+          </div>
+          <h3>Unleaded</h3>
+        </div>
+
+        <div class="product-body">
+          <p class="product-description">
+            Unleaded gasoline for everyday driving, vehicles, equipment and general
+            operational applications.
+          </p>
+
+          <div class="product-footer">
+            <span>General operational use</span>
+            <a href="#quote">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- PRODUCT SECTION CTA -->
+    <div class="products-cta">
+      <div class="products-cta-content">
+        <div class="products-cta-icon">
+          <i class="fa-solid fa-gas-pump"></i>
+        </div>
+        <div>
+          <h3>Need a reliable fuel supply for your business or operations?</h3>
+          <p>
+            Energynome Trade OPC provides diesel and gasoline products for customers
+            across Negros Occidental and nearby areas.
+          </p>
+        </div>
+      </div>
+
+      <a class="btn" href="#quote">
+        Request a Quote <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries" id="industries">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Who We Supply</div>
+      <h2>Fuel Supply That Keeps<br>Your Operations <span style="color:var(--orange)">Moving</span></h2>
+      <p>Reliable diesel and gasoline supply for businesses, fleets, marine operations, construction, and industrial needs.</p>
+    </div>
+
+    <div class="industry-grid">
+
+      <article class="industry"
+        data-industry="business"
+        data-title="Business &amp; Commercial"
+        data-icon="fa-building"
+        data-image="industry-business.jpg"
+        data-lead="Fuel supply for commercial establishments and business operations that depend on dependable and coordinated fuel sourcing."
+        data-products="Diesel|Premium Gasoline (PRO)|Unleaded Gasoline (ULG)"
+        data-support="Commercial establishments|Business operations|Regular fuel requirements|Scheduled supply arrangements">
+        <div class="industry-image">
+          <img src="industry-business.jpg" alt="Business and commercial fuel supply" loading="lazy"
+               onerror="this.onerror=null;this.src='fuel-supply.jpg'">
+        </div>
+        <div class="industry-icon"><i class="fa-solid fa-building"></i></div>
+        <h3>Business &amp;<br>Commercial</h3>
+        <p>Fuel supply for commercial establishments and business operations.</p>
+        <button class="industry-details" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+      </article>
+
+      <article class="industry"
+        data-industry="transport"
+        data-title="Transportation &amp; Logistics"
+        data-icon="fa-truck"
+        data-image="industry-transportation.jpg"
+        data-lead="Reliable fuel supply for fleets, trucks, and transportation operations with requirements that can be coordinated around schedules and volume."
+        data-products="Diesel|Premium Gasoline (PRO)|Unleaded Gasoline (ULG)"
+        data-support="Trucks and fleet vehicles|Transportation operations|Logistics requirements|Scheduled fuel deliveries">
+        <div class="industry-image">
+          <img src="industry-transportation.jpg" alt="Transportation and logistics fuel supply" loading="lazy"
+               onerror="this.onerror=null;this.src='delivery-operations.jpg'">
+        </div>
+        <div class="industry-icon"><i class="fa-solid fa-truck"></i></div>
+        <h3>Transportation &amp;<br>Logistics</h3>
+        <p>Reliable fuel supply for fleets, trucks, and transportation operations.</p>
+        <button class="industry-details" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+      </article>
+
+      <article class="industry"
+        data-industry="marine"
+        data-title="Marine &amp; Fishing"
+        data-icon="fa-anchor"
+        data-image="industry-marine.png"
+        data-lead="Fuel support for marine, fishing, and related operations where dependable supply coordination is important."
+        data-products="Diesel|Premium Gasoline (PRO)|Unleaded Gasoline (ULG)"
+        data-support="Marine operations|Fishing operations|Vessel requirements|Planned fuel supply">
+        <div class="industry-image">
+          <img src="industry-marine.png" alt="Marine and fishing fuel supply" loading="lazy"
+               onerror="this.onerror=null;this.src='transport and logistics.jpg'">
+        </div>
+        <div class="industry-icon"><i class="fa-solid fa-anchor"></i></div>
+        <h3>Marine &amp;<br>Fishing</h3>
+        <p>Fuel support for marine, fishing, and related operations.</p>
+        <button class="industry-details" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+      </article>
+
+      <article class="industry"
+        data-industry="construction"
+        data-title="Construction"
+        data-icon="fa-helmet-safety"
+        data-image="industry-construction.jpg"
+        data-lead="Fuel supply for construction projects, heavy equipment, and job sites that need dependable operational support."
+        data-products="Diesel|Premium Gasoline (PRO)|Unleaded Gasoline (ULG)"
+        data-support="Construction projects|Heavy equipment|Job sites|Equipment fuel requirements">
+        <div class="industry-image">
+          <img src="industry-construction.jpg" alt="Construction fuel supply" loading="lazy"
+               onerror="this.onerror=null;this.src='fuel-handling.jpg'">
+        </div>
+        <div class="industry-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+        <h3>Construction</h3>
+        <p>Fuel supply for construction projects, equipment, and job sites.</p>
+        <button class="industry-details" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+      </article>
+
+      <article class="industry"
+        data-industry="industrial"
+        data-title="Industrial &amp; Equipment"
+        data-icon="fa-gears"
+        data-image="industry-industrial.jpg"
+        data-lead="Fuel for industrial operations, generators, machinery, and heavy equipment that support essential business activities."
+        data-products="Diesel|Premium Gasoline (PRO)|Unleaded Gasoline (ULG)"
+        data-support="Industrial operations|Generators|Machinery|Heavy equipment">
+        <div class="industry-image">
+          <img src="industry-industrial.jpg" alt="Industrial and equipment fuel supply" loading="lazy"
+               onerror="this.onerror=null;this.src='fuel-supply.jpg'">
+        </div>
+        <div class="industry-icon"><i class="fa-solid fa-gears"></i></div>
+        <h3>Industrial &amp;<br>Equipment</h3>
+        <p>Fuel for industrial operations, generators, machinery, and heavy equipment.</p>
+        <button class="industry-details" type="button">View Details <i class="fa-solid fa-arrow-right"></i></button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRY DETAIL MODAL -->
+<div class="industry-modal" id="industryModal" aria-hidden="true">
+  <div class="industry-modal-box" role="dialog" aria-modal="true" aria-labelledby="industryModalTitle">
+    <button class="industry-modal-close" id="industryModalClose" type="button" aria-label="Close industry details">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="industry-modal-photo">
+      <img id="industryModalImage" src="" alt="">
+      <div class="industry-modal-caption" id="industryModalCaption"></div>
+    </div>
+    
+    <div class="industry-modal-content">
+      <div class="industry-modal-heading">
+        <div class="industry-modal-icon" id="industryModalIcon"><i class="fa-solid fa-building"></i></div>
+        <h3 id="industryModalTitle"></h3>
+      </div>
+
+      <p class="industry-modal-lead" id="industryModalLead"></p>
+
+      <div class="industry-modal-columns">
+        <div class="industry-modal-column">
+          <h4>Fuel Products</h4>
+          <ul class="industry-modal-list" id="industryModalProducts"></ul>
+        </div>
+        <div class="industry-modal-column">
+          <h4>We Can Support</h4>
+          <ul class="industry-modal-list" id="industryModalSupport"></ul>
+        </div>
+      </div>
+
+      <div class="industry-service">
+        <i class="fa-solid fa-location-dot"></i>
+        <strong>Service Area</strong><br>
+        Negros Occidental &amp; Nearby Areas
+      </div>
+
+      <div class="industry-modal-actions">
+        <a class="btn btn-orange" href="#quote" id="industryQuoteLink">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="btn btn-outline" type="button" id="industryModalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="solutions" id="services">
+  <div class="container solution-grid">
+    <div class="solution-title">
+      <div class="section-kicker">Our Fuel Supply Services</div>
+      <h2>Fuel Supply<br>Solutions</h2>
+    </div>
+    <div class="solution"><div class="solution-icon"><i class="fa-solid fa-repeat"></i></div><h3>Regular Fuel Supply</h3><p>Dependable supply for daily or regular operations.</p></div>
+    <div class="solution"><div class="solution-icon"><i class="fa-solid fa-calendar-check"></i></div><h3>Recurring Supply</h3><p>Scheduled supply based on your requirements.</p></div>
+    <div class="solution"><div class="solution-icon"><i class="fa-solid fa-database"></i></div><h3>Bulk / Volume Supply</h3><p>Solutions for larger-volume fuel requirements.</p></div>
+    <div class="solution"><div class="solution-icon"><i class="fa-solid fa-truck"></i></div><h3>Delivery Coordination</h3><p>We coordinate supply and delivery arrangements.</p></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container about">
+    <div class="about-visual">
+      <div class="about-badge">Energynome Trade OPC</div>
+      <div class="about-visual-content">
+        <small>Fuel Supply &amp; Distribution</small>
+        <h3>Fueling<br><span>Progress.</span></h3>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <div class="section-kicker">About Energynome</div>
+      <h2>Built Around Reliable Supply</h2>
+      <p>
+        Energynome Trade OPC is focused on reliable fuel supply and distribution for businesses,
+        transportation, marine operations, construction, equipment and other customers with ongoing fuel requirements.
+      </p>
+      <p>
+        We aim to make fuel sourcing straightforward through responsive service, supply coordination and customer-focused solutions.
+      </p>
+      <ul class="checks">
+        <li>Reliable product supply</li>
+        <li>Responsive customer service</li>
+        <li>Flexible supply arrangements</li>
+        <li>Professional delivery coordination</li>
+      </ul>
+      <a class="btn btn-mint" href="#contact">Talk to Energynome <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <div class="container facts">
+    <div class="fact"><strong>3</strong><span>Fuel Products</span></div>
+    <div class="fact"><strong>BULK</strong><span>Supply Focus</span></div>
+    <div class="fact"><strong>Negros Island</strong><span>Based &amp; Serving</span></div>
+    <div class="fact"><strong>Flexible</strong><span>Supply Arrangements</span></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section" id="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Why Choose Us</div>
+      <h2>Why Energynome Trade OPC?</h2>
+      <p>Dependable fuel supply, responsive coordination, and practical solutions built around your operational needs.</p>
+    </div>
+
+    <div class="why-layout">
+      <div class="why-intro">
+        <div class="why-intro-badge">
+          <i class="fa-solid fa-shield-halved"></i>
+          Fuel Supply Solutions
+        </div>
+
+        <h3>Fuel supply built around your <span>business needs.</span></h3>
+        <p>
+          From fuel requirements to delivery coordination, we work with you to keep
+          your business, operations and projects moving forward.
+        </p>
+        <a class="btn btn-orange" href="#quote">
+          Request a Quote <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="why-benefits">
+        <div class="why">
+          <div class="why-icon"><i class="fa-solid fa-droplet"></i></div>
+          <h3>Reliable Fuel Supply</h3>
+          <p>Dependable supply of Diesel, Premium and Unleaded gasoline for your operations.</p>
+        </div>
+
+        <div class="why">
+          <div class="why-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>Quality Fuel Products</h3>
+          <p>Fuel products suited to your vehicles, equipment and operational requirements.</p>
+        </div>
+
+        <div class="why">
+          <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>On-Time Delivery Coordination</h3>
+          <p>Supply and delivery arrangements coordinated around your agreed schedule.</p>
+        </div>
+
+        <div class="why">
+          <div class="why-icon"><i class="fa-solid fa-sliders"></i></div>
+          <h3>Flexible Supply Arrangements</h3>
+          <p>Supply options can be discussed around your product, volume and requirements.</p>
+        </div>
+
+        <div class="why">
+          <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Customer-Focused Support</h3>
+          <p>We value long-term customer relationships built on clear communication and trust.</p>
+        </div>
+
+        <div class="why">
+          <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Professional &amp; Responsive Service</h3>
+          <p>Responsive assistance and professional coordination from inquiry through supply.</p>
+        </div>
+
+        <div class="why-service-note">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Serving businesses, transportation, marine, construction and industrial operations</strong><br>
+            <span>Across Negros Occidental and nearby areas.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how-it-works">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">How It Works</div>
+      <h2>Simple Steps. Reliable Supply.</h2>
+      <p>From inquiry to supply, we keep the process clear and coordinated.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-title"><div class="section-kicker">Our Process</div><h2>From Request<br>to Supply</h2></div>
+      <div class="step"><b>01</b><h3>Send Inquiry</h3><p>Tell us your fuel type, quantity and location.</p></div>
+      <div class="step"><b>02</b><h3>Confirm Requirement</h3><p>We discuss your requirements and supply details.</p></div>
+      <div class="step"><b>03</b><h3>Arrange Supply</h3><p>Supply and delivery arrangements are coordinated.</p></div>
+      <div class="step"><b>04</b><h3>Supply / Delivery</h3><p>Fuel is supplied or delivered as agreed.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Energynome in Action</div>
+      <h2>Our Operations</h2>
+      <p>Explore fuel supply, delivery, handling, team and transport operations.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-card" role="button" tabindex="0" data-title="Fuel Supply" data-images='["fuel-supply.jpg"]' data-description="Energynome Trade OPC is a fuel supply and distribution company committed to providing dependable petroleum products to commercial and industrial customers.">
+        <img src="fuel-supply.jpg" alt="Fuel Supply" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="gallery-click"><i class="fa-solid fa-images"></i></div>
+        <span><i class="fa-solid fa-gas-pump"></i> Fuel Supply</span>
+      </div>
+
+      <div class="gallery-card" role="button" tabindex="0" data-title="Delivery Operations" data-images='["delivery-operations.jpg","delivery-operations2.jpg","delivery-operations3.jpg"]' data-description="A customer-focused delivery operation designed around dependable coordination, scheduling, responsible handling and service from dispatch to customer receipt.">
+        <img src="delivery-operations.jpg" alt="Delivery Operations" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="gallery-click"><i class="fa-solid fa-images"></i></div>
+        <span><i class="fa-solid fa-truck"></i> Delivery Operations</span>
+      </div>
+
+      <div class="gallery-card" role="button" tabindex="0" data-title="Our Team" data-images='["our-team.jpg"]' data-description="Meet the people behind Energynome Trade OPC and our commitment to responsive, professional service.">
+        <img src="our-team.jpg" alt="Our Team" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="gallery-click"><i class="fa-solid fa-images"></i></div>
+        <span><i class="fa-solid fa-users"></i> Our Team</span>
+      </div>
+
+      <div class="gallery-card" role="button" tabindex="0" data-title="Fuel Handling" data-images='["fuel-handling.jpg","fuel-handling2.jpg","fuel-handling3.jpg"]' data-description="Responsible handling of petroleum products with emphasis on safety, product integrity, secure containment and efficient transfer operations.">
+        <img src="fuel-handling.jpg" alt="Fuel Handling" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="gallery-click"><i class="fa-solid fa-images"></i></div>
+        <span><i class="fa-solid fa-oil-can"></i> Fuel Handling</span>
+      </div>
+
+      <div class="gallery-card" role="button" tabindex="0" data-title="Transport &amp; Logistics" data-images='["transport and logistics.jpg","transport and logistics2.jpg","transport and logistics3.jpg"]' data-description="Fuel transportation and delivery logistics coordinated around planning, responsible handling and dependable service.">
+        <img src="transport and logistics.jpg" alt="Transport and Logistics" loading="lazy" onerror="this.style.opacity='0'">
+        <div class="gallery-click"><i class="fa-solid fa-images"></i></div>
+        <span><i class="fa-solid fa-road"></i> Transport &amp; Logistics</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="photo-modal" id="photoModal" aria-hidden="true">
+  <div class="photo-modal-box" role="dialog" aria-modal="true" aria-labelledby="photoModalTitle">
+    <button class="photo-modal-close" id="photoModalClose" type="button" aria-label="Close photo viewer"><i class="fa-solid fa-xmark"></i></button>
+    <div class="photo-slideshow">
+      <button class="photo-nav photo-prev" id="photoPrev" type="button" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+      <img class="photo-modal-image" id="photoModalImage" src="" alt="">
+      <button class="photo-nav photo-next" id="photoNext" type="button" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="photo-dots" id="photoDots"></div>
+    <div class="photo-modal-info"><h3 id="photoModalTitle"></h3><p id="photoModalDescription"></p></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container cta-inner">
+    <div>
+      <div class="section-kicker">Need Fuel for Your Operations?</div>
+      <h2>Let's Discuss Your Fuel Requirement.</h2>
+      <p>Tell us your product, estimated volume and delivery location so we can review your requirement.</p>
+    </div>
+    <div class="buttons">
+      <a class="btn btn-orange" href="#quote">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="btn btn-outline" href="#price-request">Get Current Price <i class="fa-solid fa-tags"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CURRENT FUEL PRICE -->
+<section class="price-request" id="price-request">
+  <div class="container price-grid">
+    <div>
+      <div class="section-kicker">Latest Fuel Price</div>
+      <h2>Request the Latest Available Fuel Price</h2>
+      <p class="lead">Send your details and the fuel product you are interested in. We will review your request and respond with the latest available price.</p>
+      <p class="price-note">Fuel prices may vary depending on product, volume, location, market conditions and agreed terms.</p>
+
+      <div class="price-highlights">
+        <div><i class="fa-solid fa-check"></i> Diesel, Premium &amp; Unleaded</div>
+        <div><i class="fa-solid fa-check"></i> Volume-based requests</div>
+        <div><i class="fa-solid fa-check"></i> Business / station inquiries</div>
+        <div><i class="fa-solid fa-check"></i> Direct response from Energynome</div>
+      </div>
+    </div>
+
+    <form id="priceForm" class="price-form" autocomplete="on">
+      <div class="price-fields">
+        <div class="field"><label for="priceName">Name *</label><input type="text" id="priceName" name="customer_name" required autocomplete="name" placeholder="Full name"></div>
+        <div class="field"><label for="priceProduct">Fuel Product *</label><select id="priceProduct" name="fuel_product" required><option value="">Select fuel product</option><option value="Diesel (ADO)">Diesel (ADO)</option><option value="Premium (PRO)">Premium (PRO)</option><option value="Unleaded (ULG)">Unleaded (ULG)</option></select></div>
+        <div class="field"><label for="priceContact">Phone Number *</label><input type="tel" id="priceContact" name="contact_number" required autocomplete="tel" placeholder="09XX XXX XXXX"></div>
+        <div class="field"><label for="priceCompany">Company / Station Name *</label><input type="text" id="priceCompany" name="company" required autocomplete="organization" placeholder="Company or station name"></div>
+        <div class="field"><label for="email">Email Address *</label><input type="email" id="email" name="customer_email" required placeholder="customer@example.com"></div>
+        <div class="field"><label for="priceVolume">Volume *</label><input type="text" id="priceVolume" name="volume" required placeholder="e.g. 2,000 liters"></div>
+        <input type="text" name="honeypot" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </div>
+
+      <div class="recaptcha-wrap">
+        <div class="g-recaptcha" data-sitekey="6LdD4bEtAAAAAMl8uQ3oDo0SF0RbSQtFnHdhNqgK"></div>
+      </div>
+
+      <button id="priceSubmitBtn" class="btn btn-orange" type="submit"><i class="fa-solid fa-tags"></i><span id="priceSubmitText">Request Current Fuel Price</span></button>
+      <div id="priceStatus" class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote" id="quote">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Request a Quote</div>
+      <h2>Tell Us What You Need</h2>
+      <p>Complete the form below. Your inquiry will be sent directly to Energynome Trade OPC.</p>
+    </div>
+
+    <form id="quoteForm" class="form" autocomplete="on">
+      <div class="form-grid">
+        <div class="field"><label for="name">Customer's Name *</label><input type="text" id="name" name="customer_name" required placeholder="Full name"></div>
+        <div class="field"><label for="station">Company / Station Name</label><input type="text" id="station" name="company" placeholder="Company or station name"></div>
+        <div class="field"><label for="email">Email Address *</label><input type="email" id="email" name="customer_email" required placeholder="customer@example.com"></div>
+        <div class="field"><label for="phone">Contact Number *</label><input type="tel" id="phone" name="contact_number" required placeholder="09XX XXX XXXX"></div>
+        <div class="field"><label for="product">Fuel Product *</label><select id="product" name="fuel_product" required><option value="">Select fuel product</option><option value="Diesel (ADO)">Diesel (ADO)</option><option value="Premium (PRO)">Premium (PRO)</option><option value="Unleaded (ULG)">Unleaded (ULG)</option></select></div>
+        <div class="field"><label for="volume">Volume *</label><input type="text" id="volume" name="volume" required placeholder="e.g. 2,000 liters"></div>
+        <div class="field full"><label for="location">Delivery / Pickup Location *</label><input type="text" id="location" name="delivery_location" required placeholder="City / Municipality / Province"></div>
+        <div class="field full"><label for="message">Additional Requirements</label><textarea id="message" name="additional_requirements" placeholder="Tell us about your fuel requirement, preferred schedule, delivery details, or other information..."></textarea></div>
+        <input type="text" name="honeypot" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      </div>
+
+      <div class="recaptcha-wrap">
+        <div class="g-recaptcha" data-sitekey="6LdD4bEtAAAAAMl8uQ3oDo0SF0RbSQtFnHdhNqgK"></div>
+      </div>
+
+      <button id="submitBtn" class="btn btn-orange" type="submit"><i class="fa-solid fa-paper-plane"></i><span id="submitText">Send Inquiry</span></button>
+      <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container faq-wrap">
+    <div class="section-head">
+      <div class="section-kicker">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about our products, supply and inquiry process.</p>
+    </div>
+
+    <details><summary>What fuel products do you supply?</summary><p>We supply Diesel (ADO), Premium (PRO) and Unleaded (ULG), subject to availability and agreed terms.</p></details>
+    <details><summary>Can I request a quotation?</summary><p>Yes. Complete our quote form with your product, estimated volume, location and contact details.</p></details>
+    <details><summary>Can I request the latest fuel price?</summary><p>Yes. Use our Current Fuel Price request form and provide the fuel product and estimated volume. We will review your request and respond with the latest available price.</p></details>
+    <details><summary>Do you support recurring fuel requirements?</summary><p>Recurring supply arrangements can be discussed based on your requirements, availability and agreed terms.</p></details>
+    <details><summary>Can delivery arrangements be discussed?</summary><p>Yes. Delivery or pickup arrangements can be coordinated according to the agreed supply requirements.</p></details>
+    <details><summary>How quickly will you respond to my inquiry?</summary><p>We will review your inquiry and respond using the contact information you provide.</p></details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-cta">
+      <div class="section-kicker">Need Fuel for Your Business?</div>
+      <h2>We Are Ready to Supply.</h2>
+      <p>Send us your fuel requirements and our team can review your request.</p>
+      <div class="buttons">
+        <a class="btn btn-orange" href="#quote">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-outline" href="#price-request">Get Current Fuel Price <i class="fa-solid fa-tags"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <h3>Contact Us</h3>
+      <p><i class="fa-solid fa-phone"></i><a class="contact-link" href="tel:+034469524">+034 469 524</a></p>
+      <p><a class="viber-link" href="viber://chat?number=%2B639XXXXXXXXX" title="Open Viber"><i class="fa-brands fa-viber"></i><span>Viber: +63 9xxx xxx xxxx</span></a></p>
+      <p><i class="fa-solid fa-envelope"></i><a class="contact-link" href="mailto:Lea.Tortogo.energynome@outlook.com">Lea.Tortogo.energynome@outlook.com</a></p>
+      <p><i class="fa-solid fa-location-dot"></i><strong>Main Office</strong><br>JJM Building, Second Floor,<br>Poblacion, San Enrique,<br>Negros Occidental, Philippines</p>
+      <p><i class="fa-solid fa-clock"></i>Contact us for current availability, pricing and supply arrangements.</p>
+    </div>
+
+    <div class="contact-box map-box">
+      <h3>Our Location</h3>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=JM%20CAFE,+Poblacion,+San+Enrique,+Negros+Occidental&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="location-note"><i class="fa-solid fa-location-dot"></i> JJM Building, Second Floor, Poblacion, San Enrique, Negros Occidental</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="privacy" id="privacy">
+  <div class="container privacy-box">
+    <div class="section-kicker">Privacy</div>
+    <h2>Privacy Policy</h2>
+    <p>
+      At Energynome Trade OPC, we value your privacy. Information submitted through our inquiry and fuel price request forms may include your name, company, email address, contact number, location and fuel requirements.
+      We use the information you provide to review and respond to your inquiries, quotations and fuel price requests. We do not request information that is unnecessary for processing your inquiry.
+      By submitting a form, you acknowledge that the information provided may be used by Energynome Trade OPC for the purpose of responding to your request.
+    </p>
+    <p>For privacy-related questions, contact <a href="mailto:Lea.Tortogo.energynome@outlook.com">Lea.Tortogo.energynome@outlook.com</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FLOATING CONTACT -->
+<div class="floating-actions">
+  <a class="floating-action quote" href="#quote" aria-label="Request a quote" title="Request a Quote"><i class="fa-solid fa-file-invoice"></i></a>
+  <a class="floating-action email" href="mailto:Lea.Tortogo.energynome@outlook.com" aria-label="Email Energynome Trade OPC" title="Email Energynome Trade OPC"><i class="fa-solid fa-envelope"></i></a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer">
+    <div>
+      <img src="logo.png" alt="Energynome Trade OPC">
+      <p>Reliable Fuel Supply for a Stronger, Moving Future.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#gallery">Operations</a>
+      </div>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <div class="footer-links">
+        <a href="#price-request">Get Current Fuel Price</a>
+        <a href="#quote">Request a Quote</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Energynome Trade OPC. All Rights Reserved.</span>
+    <span>Fuel Supply &amp; Distribution • Negros Occidental, Philippines</span>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   EMAILJS CONFIGURATION
+   Existing working IDs preserved
+ ========================================================= */
+const EMAILJS_PUBLIC_KEY = "_T4caMrSKH57OxEid";
+const EMAILJS_SERVICE_ID = "service_29wwqnb";
+const QUOTE_TEMPLATE_ID = "template_bgkgyfp";
+const PRICE_TEMPLATE_ID = "template_vthneo9";
+
+emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+/* MOBILE MENU */
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+
+menuButton.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", navLinks.classList.contains("open"));
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+  });
+});
+
+/* DARK MODE */
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = themeToggle.querySelector("i");
+
+function setTheme(theme){
+  const dark = theme === "dark";
+  document.body.classList.toggle("dark", dark);
+  themeIcon.className = dark ? "fa-solid fa-sun" : "fa-solid fa-moon";
+  localStorage.setItem("energynomeTheme", theme);
+}
+
+const savedTheme = localStorage.getItem("energynomeTheme");
+setTheme(savedTheme || "light");
+
+themeToggle.addEventListener("click", () => {
+  setTheme(document.body.classList.contains("dark") ? "light" : "dark");
+});
+
+/* YEAR */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ACTIVE NAVIGATION */
+const sections = document.querySelectorAll("main section[id]");
+const navigationLinks = document.querySelectorAll(".nav-links a:not(.nav-quote)");
+
+function updateActiveNavigation(){
+  let current = "home";
+  const scrollPosition = window.scrollY + 160;
+
+  sections.forEach(section => {
+    if(scrollPosition >= section.offsetTop &&
+       scrollPosition < section.offsetTop + section.offsetHeight){
+      current = section.id;
+    }
+  });
+
+  navigationLinks.forEach(link => {
+    link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+  });
+}
+
+window.addEventListener("scroll", updateActiveNavigation, {passive:true});
+window.addEventListener("load", updateActiveNavigation);
+
+/* =========================================================
+   EMAILJS + reCAPTCHA FORM HANDLER
+   ========================================================= */
+async function sendEmailJS(form, statusElement, button, buttonTextElement, templateID, successMessage){
+  statusElement.className = "form-status";
+  statusElement.textContent = "";
+
+  const honeypot = form.querySelector('input[name="honeypot"]');
+  if(honeypot && honeypot.value.trim() !== ""){
+    console.warn("Honeypot triggered.");
+    return;
+  }
+
+  const recaptcha = form.querySelector(".g-recaptcha");
+  if(recaptcha){
+    const response = recaptcha.querySelector(".g-recaptcha-response");
+    if(!response || !response.value.trim()){
+      statusElement.className = "form-status error";
+      statusElement.innerHTML =
+        '<i class="fa-solid fa-shield-halved"></i> <strong>Please complete the reCAPTCHA.</strong><br>' +
+        'Please confirm that you are not a robot before submitting the form.';
+      return;
+    }
+  }
+
+  button.disabled = true;
+  buttonTextElement.textContent = "Sending...";
+  statusElement.className = "form-status loading";
+  statusElement.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending your request...';
+
+  try{
+    const formData = new FormData(form);
+    const templateParams = {};
+
+    formData.forEach((value,key) => {
+      if(key !== "honeypot" && key !== "g-recaptcha-response"){
+        templateParams[key] = value;
+      }
+    });
+
+    const response = await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      templateID,
+      templateParams
+    );
+
+    console.log("EmailJS response:", response);
+
+    statusElement.className = "form-status success";
+    statusElement.innerHTML =
+      '<i class="fa-solid fa-circle-check"></i> <strong>Request sent successfully!</strong><br>' +
+      successMessage;
+
+    form.reset();
+
+    if(typeof grecaptcha !== "undefined"){
+      grecaptcha.reset();
+    }
+
+  }catch(error){
+    console.error("EmailJS Error:", error);
+
+    statusElement.className = "form-status error";
+    statusElement.innerHTML =
+      '<i class="fa-solid fa-circle-exclamation"></i> <strong>Unable to send your request.</strong><br>' +
+      'Please try again or contact us directly.';
+
+    if(typeof grecaptcha !== "undefined"){
+      grecaptcha.reset();
+    }
+  }finally{
+    button.disabled = false;
+    buttonTextElement.textContent = button.dataset.defaultText;
+  }
+}
+
+/* QUOTE FORM */
+const quoteForm = document.getElementById("quoteForm");
+const quoteStatus = document.getElementById("formStatus");
+const quoteBtn = document.getElementById("submitBtn");
+const quoteText = document.getElementById("submitText");
+
+quoteBtn.dataset.defaultText = "Send Inquiry";
+
+quoteForm.addEventListener("submit", event => {
+  event.preventDefault();
+
+  sendEmailJS(
+    quoteForm,
+    quoteStatus,
+    quoteBtn,
+    quoteText,
+    QUOTE_TEMPLATE_ID,
+    "Thank you. Energynome Trade OPC has received your fuel inquiry. We will contact you using the details you provided."
+  );
+});
+
+/* PRICE FORM */
+const priceForm = document.getElementById("priceForm");
+const priceStatus = document.getElementById("priceStatus");
+const priceBtn = document.getElementById("priceSubmitBtn");
+const priceText = document.getElementById("priceSubmitText");
+
+priceBtn.dataset.defaultText = "Request Current Fuel Price";
+
+priceForm.addEventListener("submit", event => {
+  event.preventDefault();
+
+  sendEmailJS(
+    priceForm,
+    priceStatus,
+    priceBtn,
+    priceText,
+    PRICE_TEMPLATE_ID,
+    "Thank you. We will review your request and send you the latest available fuel price."
+  );
+});
+
+/* =========================================================
+   INDUSTRIES — DETAIL MODAL
+  ========================================================= */
+const industryModal = document.getElementById("industryModal");
+const industryModalImage = document.getElementById("industryModalImage");
+const industryModalCaption = document.getElementById("industryModalCaption");
+const industryModalTitle = document.getElementById("industryModalTitle");
+const industryModalLead = document.getElementById("industryModalLead");
+const industryModalIcon = document.getElementById("industryModalIcon");
+const industryModalProducts = document.getElementById("industryModalProducts");
+const industryModalSupport = document.getElementById("industryModalSupport");
+const industryModalClose = document.getElementById("industryModalClose");
+const industryModalCloseBtn = document.getElementById("industryModalCloseBtn");
+
+function fillIndustryList(element, value){
+  element.innerHTML = "";
+  (value || "").split("|").filter(Boolean).forEach(item => {
+    const li = document.createElement("li");
+    li.innerHTML = '<i class="fa-solid fa-circle-check"></i><span></span>';
+    li.querySelector("span").textContent = item;
+    element.appendChild(li);
+  });
+}
+
+function openIndustryModal(card){
+  const title = card.dataset.title || "";
+  const image = card.dataset.image || "";
+  const icon = card.dataset.icon || "fa-building";
+
+  industryModalTitle.textContent = title;
+  industryModalCaption.textContent = title;
+  industryModalLead.textContent = card.dataset.lead || "";
+  industryModalImage.src = image;
+  industryModalImage.alt = title;
+
+  industryModalIcon.innerHTML = "";
+  const iconEl = document.createElement("i");
+  iconEl.className = "fa-solid " + icon;
+  industryModalIcon.appendChild(iconEl);
+
+  fillIndustryList(industryModalProducts, card.dataset.products);
+  fillIndustryList(industryModalSupport, card.dataset.support);
+
+  industryModal.classList.add("show");
+  industryModal.setAttribute("aria-hidden","false");
+  document.body.classList.add("modal-open");
+  industryModalClose.focus();
+}
+function closeIndustryModal(){
+  industryModal.classList.remove("show");
+  industryModal.setAttribute("aria-hidden","true");
+  document.body.classList.remove("modal-open");
+  industryModalImage.src = "";
+}
+document.querySelectorAll(".industry").forEach(card => {
+  const detailButton = card.querySelector(".industry-details");
+
+  detailButton.addEventListener("click", event => {
+    event.stopPropagation();
+    openIndustryModal(card);
+  });
+});
+
+industryModalClose.addEventListener("click", closeIndustryModal);
+industryModalCloseBtn.addEventListener("click", closeIndustryModal);
+
+industryModal.addEventListener("click", event => {
+  if(event.target === industryModal) closeIndustryModal();
+});
+
+document.getElementById("industryQuoteLink").addEventListener("click", closeIndustryModal);
+
+document.addEventListener("keydown", event => {
+  if(industryModal.classList.contains("show") && event.key === "Escape"){
+    closeIndustryModal();
+  }
+});
+
+/* ========================================================
+   OPERATIONS PHOTO LIGHTBOX
+  ========================================================= */
+const photoModal = document.getElementById("photoModal");
+const photoModalImage = document.getElementById("photoModalImage");
+const photoModalTitle = document.getElementById("photoModalTitle");
+const photoModalDescription = document.getElementById("photoModalDescription");
+const photoModalClose = document.getElementById("photoModalClose");
+const photoPrev = document.getElementById("photoPrev");
+const photoNext = document.getElementById("photoNext");
+const photoDots = document.getElementById("photoDots");
+
+let currentPhotos = [];
+let currentPhotoIndex = 0;
+let slideshowTimer = null;
+
+function renderPhoto(){
+  if(!currentPhotos.length) return;
+
+  photoModalImage.style.opacity = "0";
+
+  setTimeout(() => {
+    photoModalImage.src = currentPhotos[currentPhotoIndex];
+    photoModalImage.alt = photoModalTitle.textContent;
+    photoModalImage.style.opacity = "1";
+  },100);
+
+  photoDots.innerHTML = "";
+
+  currentPhotos.forEach((photo,index) => {
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "photo-dot" + (index === currentPhotoIndex ? " active" : "");
+    dot.setAttribute("aria-label","View photo " + (index + 1));
+    dot.addEventListener("click", event => {
+      event.stopPropagation();
+      currentPhotoIndex = index;
+      renderPhoto();
+      restartSlideshow();
+    });
+    photoDots.appendChild(dot);
+  });
+  photoPrev.style.display = currentPhotos.length > 1 ? "grid" : "none";
+  photoNext.style.display = currentPhotos.length > 1 ? "grid" : "none";
+}
+function nextPhoto(){
+  if(currentPhotos.length < 2) return;
+  currentPhotoIndex = (currentPhotoIndex + 1) % currentPhotos.length;
+  renderPhoto();
+}
+
+function previousPhoto(){
+  if(currentPhotos.length < 2) return;
+  currentPhotoIndex = (currentPhotoIndex - 1 + currentPhotos.length) % currentPhotos.length;
+  renderPhoto();
+}
+
+function restartSlideshow(){
+  clearInterval(slideshowTimer);
+  if(currentPhotos.length > 1){
+    slideshowTimer = setInterval(nextPhoto,4000);
+  }
+}
+
+function openPhotoCard(card){
+  try{
+    currentPhotos = JSON.parse(card.dataset.images || "[]");
+  }catch{
+    currentPhotos = [card.querySelector("img")?.getAttribute("src")].filter(Boolean);
+  }
+
+  currentPhotoIndex = 0;
+  photoModalTitle.textContent = card.dataset.title || "";
+  photoModalDescription.textContent = card.dataset.description || "";
+
+  renderPhoto();
+  photoModal.classList.add("show");
+  photoModal.setAttribute("aria-hidden","false");
+  document.body.classList.add("modal-open");
+  photoModalClose.focus();
+  restartSlideshow();
+}
+
+function closePhotoCard(){
+  clearInterval(slideshowTimer);
+  slideshowTimer = null;
+  photoModal.classList.remove("show");
+  photoModal.setAttribute("aria-hidden","true");
+  document.body.classList.remove("modal-open");
+  photoModalImage.src = "";
+  currentPhotos = [];
+  photoDots.innerHTML = "";
+}
+document.querySelectorAll(".gallery-card").forEach(card => {
+  card.addEventListener("click", () => openPhotoCard(card));
+  card.addEventListener("keydown", event => {
+    if(event.key === "Enter" || event.key === " "){
+      event.preventDefault();
+      openPhotoCard(card);
+    }
+  });
+});
+
+photoPrev.addEventListener("click", event => {
+  event.stopPropagation();
+  previousPhoto();
+  restartSlideshow();
+});
+
+photoNext.addEventListener("click", event => {
+  event.stopPropagation();
+  nextPhoto();
+  restartSlideshow();
+});
+
+photoModalClose.addEventListener("click", closePhotoCard);
+
+photoModal.addEventListener("click", event => {
+  if(event.target === photoModal) closePhotoCard();
+});
+
+document.addEventListener("keydown", event => {
+  if(!photoModal.classList.contains("show")) return;
+
+  if(event.key === "Escape") closePhotoCard();
+  if(event.key === "ArrowRight"){ nextPhoto(); restartSlideshow(); }
+  if(event.key === "ArrowLeft"){ previousPhoto(); restartSlideshow(); }
+});
+</script>
+</body>
+</html>
